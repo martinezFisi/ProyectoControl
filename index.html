@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta charset="utf-8" />
+	<title>Demo Arduino Ethernet</title>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+	<script type="text/javascript">
+
+		function cargarDatos() 
+		{
+			// En la linea siguiente cambia la IP por la que esté usando tu arduino
+			$.getJSON("http://192.168.1.10").done( 
+					function(datos)
+					{ 
+						var temperatura = parseFloat(datos.temperatura);
+						var humedad = parseFloat(datos.humedad);
+						var mq7 = parseFloat(datos.mq7);
+						var uv = parseFloat(datos.uv);
+						var mq2 = parseFloat(datos.mq2);
+
+						$("#tempVal").text(datos.temperatura);
+
+						$("#humVal").text(datos.humedad);
+
+						$("#mq7Val").text(datos.mq7);
+
+						$("#uvVal").text(datos.uv
+
+						$("#mq2Val").text(datos.mq2);
+
+						$("#uptimeVal").text(datos.uptime);
+
+						console.log("Datos recibidos");
+					}
+				);
+		}
+
+		
+
+
+	</script>
+</head>
+
+<body onLoad="setInterval( 'cargarDatos()', 10 );" >
+	<div>
+		<h2>Temperatura: <span id="tempVal"></span></h2>
+		<h2>Humedad: <span id="humVal"></span></h2>
+		<h2>MQ7: <span id="mq7Val"></span></h2>
+		<h2>UV: <span id="uvVal"></span></h2>
+		<h2>MQ2: <span id="mq2Val"></span></h2>
+		<h4>Uptime: <span id="uptimeVal"></span></h4>
+	</div>
+</body>
+
+</html>
+
+

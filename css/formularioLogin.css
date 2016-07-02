@@ -1,0 +1,268 @@
+
+
+
+.panel
+{
+
+	text-align: center;
+	margin-right: 10%;
+	right: 10%;
+	position: absolute;
+	width:450px;
+	height: 740px;
+	background-color: rgba(0,0,0,.7);
+	box-shadow: 10px 0px 20px -5px black;
+	
+
+
+}
+
+.panel h1
+{
+
+	margin-top: 20%;
+	font-size: 25px;
+	font-style: italic;
+	color: #08D9D6;
+	padding: 5px;
+	border-top: 1px solid #08D9D6;
+	border-bottom: 1px solid #08D9D6;
+}
+
+.panel p
+{
+	font-size:20px;
+	padding: 10px;
+	font-family: Helvetica;
+		
+}
+	
+.panel label
+{
+	margin-top: 10%;
+	font-size: 16px;
+	color: white;
+	margin-right: 10px;
+}
+
+.panel input
+{
+	margin-left: 5%;
+	width:  60%;
+}
+
+.panel img
+{
+	margin-top:10px;
+	border-radius: 100px;
+}
+
+/*
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+  		.panel{
+  		width: 100%;
+  		left: 0.5%;
+		top: 5%;
+		text-align: center;
+	}
+  }
+
+  /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+  @media only screen and (max-width: 479px) {
+	  	.panel{
+	  	width: 100%;
+	  	left: 0.5%;
+		top: 5%;	
+		text-align: center;
+
+	}
+  }
+
+*/
+
+
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- http://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+	background-color: #f4f4f4;
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+a { text-decoration: none; }
+
+h1 { font-size: 1em}
+
+h1, p {
+	margin-bottom: 5px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.uppercase { text-transform: uppercase; }
+
+/* ---------- LOGIN ---------- */
+
+#login {
+	margin: 50px auto;
+	width: 300px;
+}
+
+form fieldset input[type="text"], input[type="password"] {
+	background-color: #e5e5e5;
+	border: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	height: 50px;
+	outline: none;
+	padding: 0px 10px;
+	width: 280px;
+	-webkit-appearance:none;
+}
+
+form fieldset input[type="submit"] {
+	background-color: #008dde;
+	border: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #f4f4f4;
+	cursor: pointer;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	height: 50px;
+	text-transform: uppercase;
+	width: 280px;
+	-webkit-appearance:none;
+}
+
+form fieldset a {
+	color: #5a5656;
+	font-size: 10px;
+}
+
+form fieldset a:hover { text-decoration: underline; }
+
+.btn-round {
+	background-color: #5a5656;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	color: #f4f4f4;
+	display: block;
+	font-size: 12px;
+	height: 50px;
+	line-height: 50px;
+	margin: 1px 125px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 50px;
+}
+
+.facebook-before {
+	background-color: #0064ab;
+	border-radius: 3px 0px 0px 3px;
+	-moz-border-radius: 3px 0px 0px 3px;
+	-webkit-border-radius: 3px 0px 0px 3px;
+	color: #f4f4f4;
+	display: block;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 50px;
+	margin-left: 5%;
+}
+
+.facebook {
+	background-color: #0079ce;
+	font-size: 17px;
+	font-weight: bold;
+	border: none;
+	border-radius: 0px 3px 3px 0px;
+	-moz-border-radius: 0px 3px 3px 0px;
+	-webkit-border-radius: 0px 3px 3px 0px;
+	color: #f4f4f4;
+	cursor: pointer;
+	height: 50px;
+	text-transform: uppercase;
+	width: 216px;
+}
+
+.twitter-before {
+	background-color: #189bcb;
+	border-radius: 3px 0px 0px 3px;
+	-moz-border-radius: 3px 0px 0px 3px;
+	-webkit-border-radius: 3px 0px 0px 3px;
+	color: #f4f4f4;
+	display: block;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 50px;
+	margin-left: 5%;
+}
+
+
+.twitter {
+	background-color: #1bb2e9;
+	font-size: 18px;
+	border: none;
+	border-radius: 0px 3px 3px 0px;
+	-moz-border-radius: 0px 3px 3px 0px;
+	-webkit-border-radius: 0px 3px 3px 0px;
+	color: #f4f4f4;
+	cursor: pointer;
+	height: 50px;
+	text-transform: uppercase;
+	width: 216px;
+}
+
+
+
+
+
+
+
+
+.panel-que-es-icova
+{
+	margin:  150px 100px 100px 50px;
+	width: 70%;
+	height: 300px;
+	border-radius: 7px;
+	background-color: rgba(0,0,0,0.9);
+	text-align: center;
+	border: 1px solid #08D9D6;
+}
+
+.panel-que-es-icova p h1
+{
+	color: #08D9D6;
+	margin-top: 5px;
+	margin-bottom: 200px;
+
+}
